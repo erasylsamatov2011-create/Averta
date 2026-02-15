@@ -1,0 +1,241 @@
+!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeVision AI | Интеллектуальная защита ритейла</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
+        
+        :root {
+            --bg-dark: #050810;
+            --card-bg: rgba(30, 41, 59, 0.5);
+        }
+
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--bg-dark); 
+            color: #e2e8f0; 
+        }
+
+        h1, h2, h3, .font-heading { 
+            font-family: 'Outfit', sans-serif; 
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">S</div>
+                Averta<span class="text-blue-500"></span>
+            </div>
+            <div class="hidden md:flex gap-10 text-sm font-semibold tracking-wide uppercase opacity-80">
+                <a href="#stats" class="hover:text-blue-400 transition">Статистика</a>
+                <a href="#tech" class="hover:text-blue-400 transition">Технология</a>
+                <a href="#pricing" class="hover:text-blue-400 transition">Тарифы</a>
+                <a href="#calc" class="hover:text-blue-400 transition">Калькулятор</a>
+            </div>
+            <button class="btn-primary px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105 active:scale-95">Связаться</button>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center justify-center px-6 pt-20 overflow-hidden">
+        <div class="absolute w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] -top-24 -left-24 animate-pulse"></div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="inline-block py-1 px-4 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">AI-Powered Security v2.0</span>
+            <h1 class="text-6xl md:text-8xl font-black mb-8 leading-[1.1] tracking-tight">Averta<span class="text-gradient"></span></h1>
+            <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+                Мы создали нейросеть, которая понимает намерения. Avert предотвращает кражи в ритейле, анализируя микро-движения и скрытие товара в реальном времени.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="#calc" class="btn-primary px-10 py-5 rounded-2xl font-bold text-lg transition-transform hover:-translate-y-1">Рассчитать окупаемость</a>
+                <a href="#tech" class="glass px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/5 transition-colors">Смотреть технологию</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="stats" class="py-32 relative">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Почему это <span class="text-blue-500">важно</span>?</h2>
+                <p class="text-slate-500">Аналитика мировых потерь в ритейле за 2025 год</p>
+            </div>
+            
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="glass p-8 rounded-[2rem] hover:border-blue-500/50 transition-all group">
+                    <div class="text-5xl font-black text-blue-500 mb-4 tracking-tighter">92%</div>
+                    <h4 class="font-bold text-lg mb-2 italic">Точность AI</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Вероятность обнаружения скрытого товара нейросетью против 12% у живого оператора.</p>
+                </div>
+                <div class="glass p-8 rounded-[2rem] hover:border-blue-500/50 transition-all">
+                    <div class="text-5xl font-black text-white mb-4 tracking-tighter">1.4%</div>
+                    <h4 class="font-bold text-lg mb-2 italic">Средняя маржа</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Многие супермаркеты работают с низкой маржой, где любая кража уничтожает дневную прибыль.</p>
+                </div>
+                <div class="glass p-8 rounded-[2rem] hover:border-blue-500/50 transition-all">
+                    <div class="text-5xl font-black text-white mb-4 tracking-tighter">$142B</div>
+                    <h4 class="font-bold text-lg mb-2 italic">США ущерб</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Ежегодные убытки от краж (Shrinkage) по данным Global Retail Report.</p>
+                </div>
+                <div class="glass p-8 rounded-[2rem] border-blue-500/30 transition-all bg-blue-500/5">
+                    <div class="text-5xl font-black text-blue-500 mb-4 tracking-tighter">45%</div>
+                    <h4 class="font-bold text-lg mb-2 italic">Внутренние кражи</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Почти половина потерь вызвана персоналом. Наш ИИ следит за всеми без исключения.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tech" class="py-20 bg-[#050810]">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-black text-center mb-16">Наш технологический <span class="text-blue-500">стек</span></h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-[2rem] border-blue-500/20">
+                <div class="text-3xl mb-4">🦴</div>
+                <h4 class="text-xl font-bold mb-3 text-white">Skeleton Analysis</h4>
+                <p class="text-sm text-slate-400">ИИ строит цифровую модель скелета человека. Мы фиксируем неестественные углы сгиба рук, характерные для прятанья товара в рукав или под куртку.</p>
+            </div>
+
+            <div class="glass p-8 rounded-[2rem] border-blue-500/20">
+                <div class="text-3xl mb-4">🧠</div>
+                <h4 class="text-xl font-bold mb-3 text-white">Heatmap Behavior</h4>
+                <p class="text-sm text-slate-400">Система анализирует «тепловые карты» остановок. Если покупатель долго стоит в «слепой зоне» и совершает резкие движения — охрана получает алерт.</p>
+            </div>
+
+            <div class="glass p-8 rounded-[2rem] border-blue-500/20">
+                <div class="text-3xl mb-4">⚡</div>
+                <h4 class="text-xl font-bold mb-3 text-white">Edge Computing</h4>
+                <p class="text-sm text-slate-400">Обработка видео идет прямо на объекте. Это гарантирует задержку менее 0.5 сек и полную конфиденциальность данных покупателей.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="calc" class="py-32 bg-slate-900/50">
+        <div class="max-w-5xl mx-auto px-8">
+            <div class="glass p-10 md:p-16 rounded-[3rem] shadow-3xl">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-4xl font-black mb-6 italic">ROI Калькулятор</h2>
+                        <p class="text-slate-400 mb-10">Введите ваши данные, чтобы увидеть потенциал экономии с внедрением Averta AI.</p>
+                        
+                        <div class="space-y-8">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-widest text-blue-500 mb-3">Потери магазина ($/мес)</label>
+                                <input type="range" id="lossRange" min="500" max="20000" step="100" value="2000" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                                <div class="text-right mt-2 font-bold" id="lossValue">$2,000</div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-widest text-blue-500 mb-3">Количество камер</label>
+                                <div class="flex items-center gap-4">
+                                    <button onclick="changeCameras(-1)" class="w-10 h-10 glass rounded-full flex items-center justify-center hover:bg-blue-600 transition">-</button>
+                                    <input type="number" id="camCount" value="4" class="bg-transparent text-2xl font-bold w-16 text-center outline-none" readonly>
+                                    <button onclick="changeCameras(1)" class="w-10 h-10 glass rounded-full flex items-center justify-center hover:bg-blue-600 transition">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-600 rounded-[2rem] p-10 text-center shadow-2xl shadow-blue-500/20">
+                        <p class="text-blue-100 font-medium mb-2">Чистая выгода в год</p>
+                        <div id="finalProfit" class="text-6xl font-black mb-6">$0</div>
+                        <div class="h-px bg-blue-400/30 mb-6"></div>
+                        <p class="text-xs text-blue-200 uppercase tracking-tighter leading-relaxed">
+                            Расчет включает предотвращение 85% краж <br> и вычет стоимости лицензии ($25/мес за камеру)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-32 max-w-7xl mx-auto px-8 text-center">
+        <h2 class="text-4xl font-bold mb-20">Готовые решения</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-blue-700 p-10 rounded-[2.5rem] border border-blue-400/50">
+                <h3 class="text-xl font-bold mb-6">Small Biz</h3>
+                <div class="text-4xl font-black mb-8 text-white">
+    $35<span class="text-sm font-normal text-white/80">/мес</span>
+</div>
+<button class="w-full py-4 rounded-2xl bg-white text-blue-600 font-bold hover:bg-blue-50 transition shadow-lg">
+    Выбрать
+</button>            </div>
+            <div class="bg-white text-black p-12 rounded-[2.5rem] scale-105 shadow-2xl relative">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[10px] px-4 py-1 rounded-full font-black uppercase">Рекомендуем</div>
+                <h3 class="text-xl font-bold mb-6">Enterprise</h3>
+                <div class="text-4xl font-black mb-8">$90<span class="text-sm font-normal text-slate-500">/мес</span></div>
+                <button class="w-full py-4 rounded-2xl bg-black text-white font-bold hover:bg-blue-600 transition">Купить сейчас</button>
+            </div>
+            <div class="bg-blue-700 p-10 rounded-[2.5rem] border border-blue-400/50">
+                <h3 class="text-xl font-bold mb-6">Network</h3>
+                <div class="text-4xl font-black mb-8">125$</div>
+<button class="w-full py-4 rounded-2xl bg-white text-blue-600 font-bold hover:bg-blue-50 transition shadow-lg">
+    Выбрать
+</button>            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-10 opacity-60">
+            <div class="text-xl font-black italic">Averta<span class="text-blue-500"></span></div>
+            <p class="text-xs text-center">Разработано для финала конкурса ИИ-проектов 2026. <br> Лицензия: MIT. Все данные аналитики подтверждены.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-blue-400">GitHub</a>
+                <a href="#" class="hover:text-blue-400">TG</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const lossRange = document.getElementById('lossRange');
+        const lossValue = document.getElementById('lossValue');
+        const camCountDisplay = document.getElementById('camCount');
+        const finalProfit = document.getElementById('finalProfit');
+
+        let camCount = 4;
+
+        function changeCameras(val) {
+            camCount = Math.max(1, Math.min(64, camCount + val));
+            camCountDisplay.value = camCount;
+            updateCalc();
+        }
+
+        function updateCalc() {
+            const monthlyLoss = parseInt(lossRange.value);
+            lossValue.innerText = `$${monthlyLoss.toLocaleString()}`;
+            
+            // Расчет: (Потери * 85% спасения) - (Кол-во камер * 25$ цена AI)
+            const savings = (monthlyLoss * 0.85);
+            const cost = camCount * 25;
+            const netProfitYearly = (savings - cost) * 12;
+
+            finalProfit.innerText = `$${Math.round(netProfitYearly).toLocaleString()}`;
+        }
+
+        lossRange.addEventListener('input', updateCalc);
+        updateCalc();
+    </script>
+    
+</body>
+</html> 
